@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 16px;
+}
+
+.category {
+  margin: 20px 12px 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card {
+  background: white;
+  margin: 8px 12px;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card.unavailable {
+  opacity: 0.5;
+}
+
+.price-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.price-btn {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.price-btn.active {
+  background: #0a7cff;
+  color: white;
+}
+
+.qty {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty button {
+  padding: 4px 10px;
+  font-size: 16px;
+}
+
+#cart {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0a7cff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+#cart button {
+  background: white;
+  color: #0a7cff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+}
