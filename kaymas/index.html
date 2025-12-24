@@ -2,21 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kaymas Restaurant Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Kaymas Restaurant</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<header>
-  <h1 id="resto-name">Kaymas Restaurant</h1>
-  <p>Select items & tap order</p>
+<header class="restaurant-header">
+  <h1>Kaymas Restaurant</h1>
+  <p>Chinese • Indian • Fast Food</p>
 </header>
+
+<div id="category-tabs"></div>
 
 <main id="menu"></main>
 
-<div id="cart">
-  <span id="cart-count">0 items</span>
+<div id="cart-bar" class="hidden">
+  <span id="cart-summary">0 items</span>
   <button onclick="orderNow()">Order on WhatsApp</button>
 </div>
 
